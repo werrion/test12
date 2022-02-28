@@ -1,3 +1,3 @@
 FROM ubuntu
 EXPOSE 9123
-CMD ["test.bat"]
+CMD ["/test.bat"]
