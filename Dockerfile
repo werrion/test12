@@ -1,3 +1,3 @@
 FROM ubuntu
 EXPOSE 9123
-CMD ["/test.bat"]
+$ ABUtility file C:\Users\oleg.krivov\Desktop\test12\scenario1.txt
