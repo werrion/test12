@@ -1,0 +1,29 @@
+<project>
+	<!-- <server host="localhost" port="9123" route="/ws/v1" /> -->
+	
+	<!-- <server host="172.31.22.48" port="9123" route="/ws/v1" /> -->
+	<!--<server host="46.101.156.78" port="9123" route="/ws/v1" />-->
+	<!--<server host="138.197.180.177" port="9123" route="/ws/v1" />-->
+	
+	<server environment="PROD" host="46.101.156.78" port="9123" route="/ws/v1" retry_time="1000" />
+	<server environment="UAT" host="46.101.156.78" port="9123" route="/ws/v1" retry_time="1000" />
+	<server environment="DEV" host="46.101.156.78" port="9123" route="/ws/v1" retry_time="1000" />
+	<server environment="LOCAL" host="localhost" port="9123" route="/ws/v1" retry_time="1000" />
+	
+	
+	
+	<sections>
+		<section name="UserProfile" personal="true" readonly="false" local="false" lazy="false" />
+		<section name="LocalProfile" personal="true" readonly="false" local="true" lazy="false" />
+		<section name="GlobalConfig" personal="false" readonly="true" local="false" lazy="false" />
+		<section name="Level22Config" personal="false" readonly="true" local="false" lazy="true" />
+		
+		<section name="GameConfigs" personal="false" readonly="false" local="false" lazy="true" />
+		
+	</sections>
+	<conditions>
+		<source name="UserProfile.rules" />
+		<source name="UserProfile.conditions" />
+		<source name="GlobalConfig.conditions" />
+	</conditions>
+</project>
