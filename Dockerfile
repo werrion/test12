@@ -1,3 +1,3 @@
-FROM ubuntu
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
 EXPOSE 9123
-$ ABUtility file C:\Users\oleg.krivov\Desktop\test12\scenario1.txt
+CMD ["test.bat"]
