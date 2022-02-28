@@ -1,0 +1,7 @@
+network 1
+timing 1
+waitto init 10000
+set UserProfile.var[0] Test_test_test_0
+set UserProfile.var[1] Test_test_test_1
+set UserProfile.var[2] Test_test_test_2
+set UserProfile.var[3] Test_test_test_3
